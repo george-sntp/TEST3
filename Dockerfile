@@ -6,4 +6,5 @@ LABEL name="Golden Image: Python 3.11 (Slim)" \
 
 RUN pip install --upgrade pip \
     && pip config set global.index https://repo.phorton.eu.ngrok.io/repository/pupy/pypi \
-    && pip config set global.index-url https://repo.phorton.eu.ngrok.io/repository/pupy/simple
+    && pip config set global.index-url https://repo.phorton.eu.ngrok.io/repository/pupy/simple \
+    apt-get remove perl -y
